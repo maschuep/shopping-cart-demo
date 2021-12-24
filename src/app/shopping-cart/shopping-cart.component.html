@@ -1,0 +1,7 @@
+<div *ngIf="products$ |async as products; else noProducts">
+    <p >Shoppingcart has {{products.length}} items.</p>
+</div>
+
+<ng-template #noProducts>
+    <p>Shoppingcart is empty.</p>
+</ng-template>
